@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ribbon1 {
+    position: absolute;
+    width: 80px;
+    height: 24px;
+    top: 15px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.arrow-icon {
+    color: #2AA39A;
+}
+
+.ribbon1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 12px solid #626ED4;
+    border-right: 12px solid transparent;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.card-background {
+    background-color: #626ED4;
+}
+
+.card-icon-background {
+    background-color: #8893f1e0;
+    font-size: x-large;
+}
+
+.card-text {
+    color: #8893f1e0;
+}
+
+.primary-background {
+    background-color: #343549;
+    color: rgb(201, 198, 198);
+}
+
+.sidebar-icons {
+    font-size: xx-small;
+}
+
+.primary-color {
+    background-color: #626ED4;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.top-navbar {
+    height: 70px;
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    margin-left: 200px;
+    background-color: #EDECF1;
+}
+
+.sidebar-wrapper {
+    position: fixed;
+    background-color: antiquewhite;
+    top: 0;
+    height: 100vh;
+    height: auto;
+}
+
+.flag {
+    width: 16px;
+    height: 16px;
+    border-radius: 10%;
+}
+
+.big {
+    font-size: larger;
+    position: relative;
+    top: -2px;
+}
+
+.table-img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.smaller {
+    font-size: smaller;
+    padding: 0;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    background-size: 88%;
+}
+
+.main-wrapper {
+    margin-left: 200px;
+    height: 100vh;
+    position: relative;
+    margin-top: 70px;
+    height: auto;
+    overflow-y: scroll;
+}
+
+#wrap.toggled .sidebar-wrapper .sidebar {
+    width: 70px;
+}
+
+#wrap.toggled .sidebar-wrapper .sidebar span {
+    display: none;
+}
+
+#wrap.toggled .sidebar-wrapper .sidebar {
+    font-size: 23px;
+}
+
+#wrap.toggled .main-wrapper {
+    margin-left: 70px;
+}
+
+#wrap.toggled .top-navbar {
+    margin-left: 70px;
+}
+
+.box1 {
+    width: 120px;
+    border-radius: 3px;
+    background: #E1E4F7;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    font-weight: 900;
+    font-family: arial;
+    position: relative;
+    left: -0.3rem;
+}
+
+.table-heading {
+    font-size: large;
+}
+
+.box2 {
+    width: 120px;
+    border-radius: 3px;
+    background: #EFF0F4;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    font-weight: 900;
+    font-family: arial;
+    position: relative;
+    right: -1rem;
+}
+
+.bubble1:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 9px solid #EFF0F4;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #EFF0F4;
+    border-bottom: 9px solid transparent;
+    right: -16px;
+    top: 0px;
+}
+
+.bubble2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 9px solid transparent;
+    border-right: 9px solid #E1E4F7;
+    border-top: 9px solid #E1E4F7;
+    border-bottom: 9px solid transparent;
+    left: -16px;
+    top: 0px;
+}
+
+.image-left {
+    left: -1.3rem;
+    top: -1rem;
+}
+
+.image-right {
+    right: -2.1rem;
+    top: -1rem;
+}
+
+.left-text {
+    color: #7880ca;
+    font-size: small;
+    font-weight: 300;
+}
+
+.right-text {
+    font-size: small;
+    font-weight: 300;
+    color: #757579;
+}
+
+.chat-heading {
+    color: #4452d4;
+    font-size: small;
+}
+
+.flow {
+    overflow-y: scroll;
+    height: 350px;
+}
+
+.bottom {
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+@media only screen and (max-width:500px) {
+    .main-wrapper {
+        margin-left: 0;
+    }
+    .sidebar-wrapper {
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width:362px) {
+    .shrink2 {
+        font-size: xx-small;
+    }
+}
