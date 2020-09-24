@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- main body wrapper start -->
+    <div class="body-wrapper overflow-auto" id="wrap">
+
+
+
+        <!-- top-navbar start -->
+        <div class="top-navbar fixed-top d-flex justify-content-between align-items-center">
+            <!-- left top nav -->
+            <div class="d-flex">
+                <button type="button" class="btn btn-sm px-3 ml-1 font-size-24 header-item" id="toggler">
+                    <i class="fas fa-bars align-middle"></i>
+                </button>
+                <!-- <button type="button" class="btn btn-sm btn-default bg-light ml-1 .caret">create</button> -->
+
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-light dropdown-toggle ml-2" type="button" data-toggle="dropdown">Create
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#" class="dropdown-item">update</a></li>
+                        <li><a href="#" class="dropdown-item">delete</a></li>
+                        <li><a href="#" class="dropdown-item">view</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- left top nav end -->
+            <!-- right top nav -->
+            <div class="d-flex">
+                <!-- searchbox start -->
+                <form class="d-none d-lg-block ml-2">
+                    <input type="text" class=" form-control rounded-pill small" placeholder="Search...">
+                </form>
+
+                <!-- search icon for small screens -->
+                <div class="dropdown keep-open d-block d-lg-none">
+                    <button id="dLabel" role="button" data-toggle="dropdown" class="btn btn-default btn-sm">
+                        <i class="fas fa-search rounded-circle align-content-center font-size-15 mt-2 ml-1"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li>
+                            <input type="text" class=" form-control rounded-pill dropdown-item btn-outline-light" placeholder="Search..." aria-labelledby="dLabel">
+                        </li>
+                    </ul>
+                </div>
+                <!-- search icons for small screen end -->
+
+                <!-- searchbox end -->
+
+                <!-- flag selector start -->
+                <div class="dropdown mt-1 ml-1">
+                    <button class="btn btn-sm btn-default dropdown-toggle d-none d-sm-block" type="button" data-toggle="dropdown"> <img src="images/united-states-of-america-flag-icon-16.png" class="img-fluid"> English
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li>
+                            <a href="#" class="dropdown-item"><img src="images/india-flag-icon-16.png" class="img-fluid  mr-2">Hindi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item"><img src="images/france-flag-icon-16.png" class="img-fluid mr-2">French</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item"><img src="images/spain-flag-icon-16.png" class="img-fluid mr-2">Spanish</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- flag selector end -->
+
+                <!-- expand button start -->
+                <div class="dropdown d-none d-lg-inline-block">
+                    <button type="button" class="btn header-item">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+                <!-- expand button end -->
+                <!-- bell icon startr -->
+                <div class=" flex-column d-none d-md-flex mr-2 ml-1">
+                    <span class="badge badge-danger smaller">3</span>
+                    <i class="far
+                         fa-bell bell big"></i>
+                </div>
+                <!-- bell icon end -->
+
+                <!-- profile pic start -->
+                <div>
+                    <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class=" img-fluid rounded-circle profile mr-2 ml-1">
+
+                </div>
+                <!-- profile pic end -->
+
+
+
+
+            </div>
+            <!-- right top nav end -->
+
+        </div>
+        <!-- top navbar end -->
+
+
+
+        <!-- side navbar wrapper start -->
+        <div class="d-flex sidebar-wrapper">
+            <!-- side nav bar -->
+            <div class="sidebar primary-background">
+                <div class="sidebar-heading d-flex align-items-center">
+                    <img src="images/geekyants-small-logo.png" class="img-fluid w-auto ml-3 mt-2" alt="">
+                    <h4 class="text-light font-weight-bold mt-3 ml-1"><span>GeekyAnts</span></h4>
+                </div>
+                <p class=" text-light text-left p-2 mt-2 ml-2"><span>Main</span></p>
+                <ul class=" list-group list-group-flush">
+                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between align-items-center primary-background ">
+                        <i class="fas fa-home menu-btn"></i><span>Dashboard</span>
+                        <span class="badge  badge-primary primary-color">2</span>
+                    </a>
+                    <a href="# " class=" list-group-item list-group-item-action d-flex justify-content-start align-items-center primary-background">
+                        <i class="far fa-calendar-alt menu-btn mr-4"></i><span class="ml-2">Calender</span>
+                    </a>
+                    </a>
+                    <a href="# " class=" list-group-item list-group-item-action d-flex justify-content-between align-items-center primary-background">
+                        <i class="far fa-envelope menu-btn mr-2"></i><span class="ml-4">Email</span><span class="fas fa-greater-than ml-auto sidebar-icons"></span>
+                    </a>
+                    <a href="# " class=" list-group-item list-group-item-action d-flex justify-content-between align-items-center primary-background ">
+                        <i class="fas fa-cube menu-btn"></i><span>UI Elements</span>
+                        <span class="fas fa-greater-than  sidebar-icons"></span>
+                    </a>
+                    <a href="# " class=" list-group-item list-group-item-action d-flex justify-content-between align-items-center primary-background ">
+                        <i class="fab fa-wpforms menu-btn mr-2"></i><span class="ml-4">Forums</span>
+                        <span class="badge badge-info ml-auto">9</span> </a>
+                    </a>
+                    <a href="# " class=" list-group-item list-group-item-action d-flex justify-content-between align-items-center primary-background">
+                        <i class="fas fa-chart-pie menu-btn mr-2"></i><span class="ml-4">Charts</span><span class="fas fa-greater-than ml-auto sidebar-icons"></span>
+                    </a>
+                    <a href="# " class=" list-group-item list-group-item-action d-flex justify-content-between align-items-center primary-background">
+                        <i class="fas fa-table menu-btn mr-2"></i><span class="ml-4">Tables</span><span class="fas fa-greater-than ml-auto sidebar-icons"></span>
+                    </a>
+                    <a href="# " class=" list-group-item list-group-item-action d-flex justify-content-between align-items-center primary-background">
+                        <i class="far fa-smile-beam menu-btn mr-2"></i><span class="ml-4">Icons</span><span class="fas fa-greater-than ml-auto sidebar-icons"></span>
+                    </a>
+                    <a href="# " class=" list-group-item list-group-item-action d-flex justify-content-between align-items-center primary-background">
+                        <i class="fas fa-map-marker-alt menu-btn mr-2"></i><span class="ml-4">Maps</span>
+                        <span class="badge badge-danger ml-auto">2</span></a>
+                    </a>
+                </ul>
+            </div>
+            <!-- side navbar end -->
+
+        </div>
+        <!-- side navbar wrapper end -->
+
+
+        <!-- main-content-wrapper start -->
+        <div class="main-wrapper position-relative">
+            <!-- main content start -->
+            <div class="main-content container-fluid position-relative">
+                <!-- welcome start -->
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-6 ml-0 mt-3">
+                        <div class="d-flex flex-column justify-content-start">
+                            <h5>Dashboard</h5>
+                            <span class="smaller">welcome to geekyants<span>
+                            </div>
+                        
+                    </div>
+                    <div class="col-6">
+                    <div class="d-flex justify-content-end align-items-center ">
+                        <button class="btn btn-primary btn-sm"><i class="fas fa-cog mr-2 smaller shrink2"></i><span class="shrink2">Settings</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- welcome end -->
+                <!-- card div starts -->
+                <div class="row justify-content-between align-items-center flex-wrap mt-3">
+                    <!-- card 1 start -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-2">
+                        <div class="card card-background card-text">
+                            <div class="ribbon1" style="background-color: #2AA39A">+ 12%
+                            </div>
+                            <div class="card-header d-flex flex-row">
+                                <div class="card-icon">
+                                    <i class="fas fa-clipboard-list card-icon-background p-4 text-light"></i>
+                                </div>
+                                <div class="d-flex  flex-column justify-content-center align-content-between ml-2">
+                                    <p class="card-title">ORDERS</p>
+                                    <p class="card-subtitle">
+                                        1,685
+                                        <i class="fa fa-arrow-up arrow-icon ml-3"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <span>Since last month</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 1 end -->
+                    <!-- card 2 start -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-2">
+                        <div class="card card-background card-text">
+                            <div class="ribbon1" style="background-color: #EC4561">- 28%
+                            </div>
+                            <div class="card-header d-flex flex-row">
+                                <div class="card-icon">
+                                    <i class="fas fa-file-invoice-dollar card-icon-background p-4 text-light"></i>
+                                </div>
+                                <div class="d-flex  flex-column justify-content-center align-content-between ml-2">
+                                    <p class="card-title">REVENUE</p>
+                                    <p class="card-subtitle">
+                                        52,368
+                                        <i class="fa fa-arrow-down ml-3" style="color: #EC4561;"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <span>Since last month</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 end -->
+                    <!-- card 3 start -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-2">
+                        <div class="card card-background card-text">
+                            <div class="ribbon1" style="background-color: #38A5F8">00%
+                            </div>
+                            <div class="card-header d-flex flex-row">
+                                <div class="card-icon">
+                                    <i class="fas fa-clipboard-list card-icon-background p-4 text-light"></i>
+                                </div>
+                                <div class="d-flex  flex-column justify-content-center align-content-between ml-2">
+                                    <p class="card-title">AVERAGE PRICE</p>
+                                    <p class="card-subtitle">
+                                        15.8
+                                        <i class="fa fa-arrow-up arrow-icon ml-3"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <span>Since last month</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 end -->
+                    <!-- card4 start -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mt-2">
+                        <div class="card card-background card-text">
+                            <div class="ribbon1" style="background-color: #F8B425">+ 84%
+                            </div>
+                            <div class="card-header d-flex flex-row">
+                                <div class="card-icon">
+                                    <i class="fas fa-clipboard-list card-icon-background p-4 text-light"></i>
+                                </div>
+                                <div class="d-flex  flex-column justify-content-center align-content-between ml-3">
+                                    <p class="card-title">PRODUCTS SOLD</p>
+                                    <p class="card-subtitle">
+                                        2436
+                                        <i class="fa fa-arrow-up arrow-icon ml-3"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <span>Since last month</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card4 end -->
+                </div>
+
+                <!-- card div ends -->
+                <!-- bottom div starts here -->
+                <div class="row d-flex flex-wrap position-relative mt-5">
+                    <div class="col-sm-12 col-md-7 col-lg-8 overflow-auto">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr class=" border-top-0">
+                                    <th colspan="6" class=" font-weight-bolder table-heading">Last Transaction</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">#(Id)</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col" colspan="2">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">#14256</td>
+                                        <td class="d-flex align-items-center">
+                                            <img src="./images/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" class="table-img"><span class="ml-2">Philip Smead</span>
+                                        </td>
+                                        <td>15/1/2018</td>
+                                        <td>$94</td>
+                                        <td><span class="badge badge-info">Delivered</span></td>
+                                        <td><span class="btn card-background text-light p-1">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#14257</td>
+                                        <td class="d-flex align-items-center">
+                                            <img src="./images/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" class="table-img"><span class="ml-2">Brent Shipley</span>
+                                        </td>
+                                        <td>16/1/2019</td>
+                                        <td>$112</td>
+                                        <td><span class="badge badge-warning text-light">Pending</span></td>
+                                        <td><span class="btn card-background text-light p-1">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#14258</td>
+                                        <td class="d-flex align-items-center">
+                                            <img src="./images/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" class="table-img"><span class="ml-2">Robert Sittion</span>
+                                        </td>
+                                        <td>17/1/2019</td>
+                                        <td>$116</td>
+                                        <td><span class="badge badge-info">Delivered</span></td>
+                                        <td><span class="btn card-background text-light p-1">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#14259</td>
+                                        <td class="d-flex align-items-center">
+                                            <img src="./images/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" class="table-img"><span class="ml-2">Albert Jackson</span>
+                                        </td>
+                                        <td>18/1/2019</td>
+                                        <td>$109</td>
+                                        <td><span class="badge badge-danger">Cancel</span></td>
+                                        <td><span class="btn card-background text-light p-1">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#14260</td>
+                                        <td class="d-flex align-items-center">
+                                            <img src="./images/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" class="table-img"><span class="ml-2">David Sanchez</span>
+                                        </td>
+                                        <td>19/1/2019</td>
+                                        <td>$120</td>
+                                        <td><span class="badge badge-info">Delivered</span></td>
+                                        <td><span class="btn card-background text-light p-1">Edit</span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-4 bottom-style">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Chat</li>
+                                <li class="list-group-item flow">
+                                    <div class="col-12">
+                                        <div class="d-flex flex-row justify-content-start align-items-center">
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class="profile rounded-circle position-relative image-left">
+                                            <div class="bubble2 box1 d-flex flex-column justify-content-start">
+                                                <p class="chat-heading mr-auto">Jhon Doe</p>
+                                                <span class="left-text align-items-center">Hi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="d-flex flex-row justify-content-end align-items-center">
+                                            <div class="bubble1 box2 d-flex flex-column justify-content-end">
+                                                <p class="chat-heading ml-auto">Smith</p>
+                                                <span class="right-text align-self-center">Hello</span>
+                                            </div>
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class=" profile rounded-circle position-relative image-right">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex flex-row justify-content-start align-items-center">
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class="profile rounded-circle position-relative image-left">
+                                            <div class="bubble2 box1 d-flex flex-column justify-content-start">
+                                                <p class="chat-heading mr-auto">Jhon Doe</p>
+                                                <span class="left-text align-items-center">How are you?</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="d-flex flex-row justify-content-end align-items-center">
+                                            <div class="bubble1 box2 d-flex flex-column justify-content-end">
+                                                <p class="chat-heading ml-auto">Smith</p>
+                                                <span class="right-text align-self-center">i'm great</span>
+                                            </div>
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class=" profile rounded-circle position-relative image-right">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex flex-row justify-content-start align-items-center">
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class="profile rounded-circle position-relative image-left">
+                                            <div class="bubble2 box1 d-flex flex-column justify-content-start">
+                                                <p class="chat-heading mr-auto">Jhon Doe</p>
+                                                <span class="left-text align-items-center">that's great</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="d-flex flex-row justify-content-end align-items-center">
+                                            <div class="bubble1 box2 d-flex flex-column justify-content-end">
+                                                <p class="chat-heading ml-auto">Smith</p>
+                                                <span class="right-text align-self-center">yupp where are you?</span>
+                                            </div>
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class=" profile rounded-circle position-relative image-right">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex flex-row justify-content-start align-items-center">
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class="profile rounded-circle position-relative image-left">
+                                            <div class="bubble2 box1 d-flex flex-column justify-content-start">
+                                                <p class="chat-heading mr-auto">Jhon Doe</p>
+                                                <span class="left-text align-items-center">i'm home</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="d-flex flex-row justify-content-end align-items-center">
+                                            <div class="bubble1 box2 d-flex flex-column justify-content-end">
+                                                <p class="chat-heading ml-auto">Smith</p>
+                                                <span class="right-text align-self-center">ok are you free this weekend?</span>
+                                            </div>
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class=" profile rounded-circle position-relative image-right">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex flex-row justify-content-start align-items-center">
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class="profile rounded-circle position-relative image-left">
+                                            <div class="bubble2 box1 d-flex flex-column justify-content-start">
+                                                <p class="chat-heading mr-auto">Jhon Doe</p>
+                                                <span class="left-text align-items-center">yupp</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="d-flex flex-row justify-content-end align-items-center">
+                                            <div class="bubble1 box2 d-flex flex-column justify-content-end">
+                                                <p class="chat-heading ml-auto">Smith</p>
+                                                <span class="right-text align-self-center">ok then lets meet</span>
+                                            </div>
+                                            <img src="images/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" class=" profile rounded-circle position-relative image-right">
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+                                    <div class="col-8"><input class="input-group-text mr-5 w-100 p-1" type="text" placeholder="Enter text to send"></div>
+                                    <div class="clo-4"><span class="btn btn-info text-light py-1 px-2">send</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- bottom content ends here -->
+            </div>
+            <!-- main content end -->
+        </div>
+        <!-- main-content-wrapper end -->
+
+
+
+    </div>
+    <!-- main body wrapper end -->
+
+
+
+
+
+
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('.keep-open').on({
+                "shown.bs.dropdown": function() {
+                    $(this).attr('closable', false);
+                },
+                "click": function() {},
+                "hide.bs.dropdown": function() {
+                    return $(this).attr('closable') == 'true';
+                }
+            });
+
+            $('.keep-open #dLabel').on({
+                "click": function() {
+                    $(this).parent().attr('closable', true);
+                }
+            })
+
+            $('#toggler').click(function(e) {
+                e.preventDefault();
+                $('#wrap').toggleClass('toggled');
+            })
+
+
+        })
+    </script>
+
+</body>
+
+</html>
